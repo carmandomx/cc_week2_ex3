@@ -9,8 +9,15 @@
 /** DO NOT CHANGE THE FUNCTION NAME **/
 const spinal = (str) => {
     /* Only make changes below this comment */
-    
-    
+    let answer = str.replace(/([A-Z])/g,' $1') /*Find all caps and add space*/
+    .replace(/[^A-Za-z0-9]/g,' ') /*Changing everything that is not a letter to a space*/
+    .replace(/\s{1,}/g,"-") /*Convert all spaces to -*/
+    .replace(/^\-|[\-]$/g,'') 
+    .toLowerCase(); /*LowerCase it*/
+
+    // https://regex101.com/ This page is very useful
+
+    return answer;
     /* Only make changes below this comment */
 }
 
