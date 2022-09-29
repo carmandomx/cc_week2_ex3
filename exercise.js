@@ -27,7 +27,8 @@ const spinal = (str) => {
             //If there aren't blank spaces before a upper case, we add a -
             if(index > 0 && spinalarr[index-1] !== " "){
                 spinalarr.splice(index, 0, "-");
-            }            
+            }         
+            //Here we just update the string   
             temp = spinalarr.join(''); 
         //After all uppercase are lowered, we change all blank spaces to -
         }else if(regexblank.test(temp)){
