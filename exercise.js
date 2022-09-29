@@ -10,11 +10,12 @@
 const spinal = (str) => {
     /* Only make changes below this comment */
     
+    return str.split(/\s|_|(?=[A-Z])/).join("-").toLowerCase();
     
     /* Only make changes below this comment */
 }
 
-
+console.log(spinal('ThisIsATest'));
 
 
 
