@@ -15,6 +15,7 @@ const spinal = (str) => {
     .replace(/^\-|[\-]$/g,'') 
     .toLowerCase(); /*LowerCase it*/
 
+    // https://regex101.com/ This page is very useful
 
     return answer;
     /* Only make changes below this comment */
