@@ -7,7 +7,7 @@
 /** DO NOT CHANGE THE FUNCTION NAME **/
 const spinal = (str) => {
   /* Only make changes below this comment */
-  let strArr = new Arr();
+  let strArr = new Array();
   for (let i = 0; i < str.length; i++) {
     if (str[i] !== str[i].toUpperCase() && str[i] !== " ") {
       strArr.push(str[i]);
@@ -15,12 +15,12 @@ const spinal = (str) => {
     if (str[i] === " ") {
       strArr.push("-");
     } else if (str[i] === str[i].toUpperCase()) {
-      if (i > 0 && str[i - 1] !== " ") strArr.push("-");
+      if (i !== 0 && str[i - 1] !== " ") strArr.push("-");
       strArr.push(str[i]);
     }
-    /* Only make changes below this comment */
   }
   return strArr.join("").toLowerCase();
+  /* Only make changes below this comment */
 };
 
 /** DO NOT CHANGE THE LINE BELOW **/
