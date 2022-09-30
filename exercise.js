@@ -16,7 +16,7 @@ const spinal = (str) => {
     // The new string will only have spaces between a lower case and an Upper case letter
     
     //Use another regular expression to search globally for a lower case letter next to an Upper case letter 
-    //and replace it with a blank space between them
+    //and replace it with a blank space between them (cases where a lowercase and uppercase are left behind)
     str = str.replace(/([a-z])([A-Z])/g, '$1 $2');
 
     // Use regular expression to search globally for blank spaces and split the substrings inbetween them into an array
