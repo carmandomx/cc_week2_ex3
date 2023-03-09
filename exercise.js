@@ -27,16 +27,6 @@ const spinal = (str) => {
     .toLowerCase();
 
   return newStr;
-
-  //   const newStr = str
-  //     .replace(/[A-Z]/g, (match) => `-${match.toLowerCase()}`)
-  //     .replace(/[\s_]+/g, "-")
-  //     .toLowerCase();
-  //   if (newStr[0] === "-") {
-  //     return newStr.slice(1);
-  //   }
-  //   return newStr;
-  /* Only make changes below this comment */
 };
 
 /** DO NOT CHANGE THE LINE BELOW **/
