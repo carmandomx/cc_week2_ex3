@@ -14,7 +14,7 @@ const spinal = (str) => {
       /[A-Z]/g,
 
       //   If index of character is 0, dont prepend anything, else prepend a "-"
-      (match, index) => (index === 0 ? "" : "-") + match.toLowerCase()
+      (match, index) => (index === 0 ? "" : "-") + match
     )
     // Replace all one or more consecutive spaces that are followd by any alphabetical character and replace it with a "-"
     .replace(/[\s]+(?=[a-zA-Z])/g, "-")
